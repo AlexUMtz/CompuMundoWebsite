@@ -1,0 +1,77 @@
+---
+const services = [
+  {
+    icon: 'fa-solid fa-laptop',
+    title: 'Laptops',
+    textDescription:
+      'Diagnóstico y solución de problemas para mantener tu laptop funcionando como nueva. Desde hardware hasta software',
+    textButton: 'Conoce más',
+    href: '',
+  },
+  {
+    icon: 'fa-solid fa-desktop',
+    title: 'PC Desktop',
+    textDescription:
+      'Reparamos tu equipo de escritorio con rapidez y precisión, garantizando que vuelvas al trabajo o entretenimiento sin interrupciones.',
+    textButton: 'Conoce más',
+    href: '',
+  },
+  {
+    icon: 'fa-solid fa-print',
+    title: 'Impresoras',
+    textDescription:
+      'Solucionamos problemas de impresión para que tus equipos vuelvan a estar en óptimas condiciones.',
+    textButton: 'Conoce más',
+    href: '',
+  },
+  {
+    icon: 'fa-solid fa-layer-group',
+    title: 'Software',
+    textDescription:
+      'Instalamos y configuramos los programas que necesitas para optimizar tu equipo y garantizar su funcionamiento eficiente.',
+    textButton: 'Conoce más',
+    href: '',
+  },
+  {
+    icon: 'fa-solid fa-pencil',
+    title: 'Papeleria',
+    textDescription:
+      'Todo lo que necesitas para la oficina, escuela o proyectos personales. Encuentra productos de calidad a precios accesibles.',
+    textButton: 'Conoce más',
+    href: '',
+  },
+  {
+    icon: 'fa-solid fa-file',
+    title: 'Trámites',
+    textDescription:
+      'Te ayudamos con gestiones como renovación de placas y más, para que ahorres tiempo y evites complicaciones.',
+    textButton: 'Conoce más',
+    href: '',
+  },
+];
+---
+
+<section id='services-home' class='container-section'>
+  <div class='title-container'>
+    <p class='text-p'>¿Qué servicios ofrecemos?</p>
+    <h2 class='title'>Servicios</h2>
+  </div>
+  <div class='grid grid-cols-2 md:grid-cols-3 gap-4'>
+    {
+      services.map((service) => (
+        <div class='bg-white group  hover:shadow-2xl p-4 lg:p-7 lg:px-12  rounded-lg text-center shadow-xl '>
+          <i class={`${service.icon} text-blue-700 text-3xl`} />
+          <h3 class='text-titleBlue font-semibold text-xl mt-2'>
+            {service.title}
+          </h3>
+          <p class='text-gray-500 text-[0.9rem] md:text-base my-3'>
+            {service.textDescription}
+          </p>
+          <a href={service.href} class='btn-general text-sm'>
+            {service.textButton}
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</section>

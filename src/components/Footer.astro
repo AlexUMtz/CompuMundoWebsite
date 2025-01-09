@@ -1,0 +1,72 @@
+---
+const navLinks = [
+  { href: '/', text: 'Home' },
+  { href: '/', text: 'Acerca de' },
+  { href: '/', text: 'Servicios' },
+  { href: '/', text: 'Productos' },
+  { href: '/', text: 'Contacto' },
+];
+
+const socialLinks = [
+  {
+    href: '/',
+    icon: 'fa-brands fa-instagram',
+    text: 'Instagram',
+  },
+  {
+    href: '/',
+    icon: 'fa-brands fa-facebook',
+    text: 'Facebook',
+  },
+  { href: '/', icon: 'fa-brands fa-tiktok', text: 'Tik Tok' },
+];
+---
+
+<footer class='bg-blue-700 py-7 px-5 lg:px-9'>
+  <div class='flex flex-col md:flex-row justify-evenly items-center'>
+    <div class='flex justify-center'>
+      <ul>
+        <p class='py-5 font-bold text-white text-xl'>Redes</p>
+
+        {
+          socialLinks.map((link) => (
+            <li class='py-2'>
+              <a
+                class='group font-light text-whiteP hover:text-gray-300 transition-colors ease-out'
+                href={link.href}
+              >
+                <i
+                  class={`pr-2 group-hover:translate-x-1 transition ease-linear ${link.icon}`}
+                />
+                {link.text}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class='flex justify-center'>
+      <ul>
+        <p class='py-5 font-bold text-white text-xl'>Menu</p>
+        {
+          navLinks.map((link) => (
+            <li class='py-2'>
+              <a
+                class='group font-light text-whiteP hover:text-gray-300 transition-colors ease-out'
+                href={link.href}
+              >
+                <i class='fa-solid fa-arrow-right pr-2 group-hover:translate-x-2 transition ease-linear' />
+                {link.text}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+  <div class='flex justify-center pt-12'>
+    <span class='font-light text-xs text-whiteP'
+      >© Alejandro Martínez | 2024</span
+    >
+  </div>
+</footer>

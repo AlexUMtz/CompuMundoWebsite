@@ -1,0 +1,15 @@
+---
+import ContactData from '@components/ContactData.astro';
+import ContactForm from '@components/ContactForm.astro';
+---
+
+<section id='contact' class='container-section md:pt-56'>
+  <div class='title-container'>
+    <p class='text-p'>Comunicate con nosotros</p>
+    <h2 class='title'>Contacto</h2>
+  </div>
+  <div class='flex justify-between flex-col md:flex-row gap-3'>
+    <ContactData />
+    <ContactForm />
+  </div>
+</section>

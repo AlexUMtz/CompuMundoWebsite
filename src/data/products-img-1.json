@@ -1,0 +1,50 @@
+[
+  {
+    "code": 1,
+    "text": "Laptops",
+    "img": "/images/home-products/laptop-dell.webp",
+    "alt": "Laptops"
+  },
+  {
+    "code": 1,
+    "text": "PC Gamer",
+    "img": "/images/home-products/pc-gamer-1.webp",
+    "alt": "PC-Gamer"
+  },
+  {
+    "code": 1,
+    "text": "Impresoras",
+    "img": "/images/home-products/impresora-brother.webp",
+    "alt": "Impresoras"
+  },
+  {
+    "code": 1,
+    "text": "Toners",
+    "img": "/images/home-products/cartucho.webp",
+    "alt": "Toners"
+  },
+  {
+    "code": 1,
+    "text": "Tintas",
+    "img": "/images/home-products/tintas.webp",
+    "alt": "Tintas"
+  },
+  {
+    "code": 1,
+    "text": "PC-Escritorio",
+    "img": "/images/home-products/dell-optiplex.webp",
+    "alt": "PC-Escritorio"
+  },
+  {
+    "code": 1,
+    "text": "Componentes",
+    "img": "/images/home-products/ssd.webp",
+    "alt": "SSD"
+  },
+  {
+    "code": 1,
+    "text": "Router",
+    "img": "/images/home-products/router.webp",
+    "alt": "Router"
+  }
+]

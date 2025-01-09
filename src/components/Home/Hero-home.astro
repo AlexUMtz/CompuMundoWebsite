@@ -1,0 +1,83 @@
+---
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/pagination';
+
+import heroData from '../../data/hero-data.json';
+
+const slidesHome = [
+  {
+    textTitle: 'Reparación de Computadoras y Laptops',
+    textDescription:
+      '¿Tu computadora, laptop necesita mantenimiento? En CompuMundo Support te ofrecemos reparación profesional y garantizada. Confiabilidad y rapidez, todo en un solo lugar.',
+    img: '/images/home-slider/img-slider-rc.webp',
+    textButton: 'Solicita tu reparación',
+    alt: 'Reparacion de computadoras',
+    href: '',
+  },
+  {
+    textTitle: 'Venta de Consumibles de Alta Calidad',
+    textDescription:
+      ' Encuentra los mejores tóneres, cartuchos de tinta, teclados y más en CompuMundo Support. Productos de calidad para tu oficina o hogar, al mejor precio.',
+    img: '/images/home-slider/img-slider-tintas.webp',
+    textButton: 'Conoce nuestros productos',
+    alt: 'Venta de consumibles',
+    href: '',
+  },
+  {
+    textTitle: 'Papelería y Servicios Digitales al Alcance de Todos',
+    textDescription:
+      'Desde copias y papelería hasta trámites de renovación de placas, en CompuMundo Support tenemos todo lo que buscas. Fácil, rápido y confiable.',
+    img: '/images/home-slider/img-slider-pape.webp',
+    textButton: 'Ver servicios',
+    alt: 'Papeleria',
+    href: '',
+  },
+  {
+    textTitle: 'Reparación de Impresoras',
+    textDescription:
+      '¿Tu impresora dejó de funcionar o necesita mantenimiento? En CompuMundo Support, solucionamos cualquier problema: desde atascos de papel hasta errores de impresión',
+    img: '/images/home-slider/img-slider-imp.webp',
+    textButton: 'Conoce los servicios',
+    alt: 'Reparacion de impresoras',
+    href: '',
+  },
+];
+---
+
+<div class='swiper w-screen h-screen'>
+  <div class='swiper-wrapper'>
+    {
+      slidesHome.map((slide) => (
+        <div class='swiper-slide px-6 md:px-12 lg:px-16 flex items-center justify-between'>
+          <div class='md:max-w-[50%] md:min-w-[40%]'>
+            <h2 class='text-blue-700 text-4xl lg:text-6xl font-bold'>
+              {slide.textTitle}
+            </h2>
+            <h3 class='text-gray-700 text-base lg:text-lg py-6'>
+              {slide.textDescription}
+            </h3>
+            <a href='' class='button-home text-sm md:text-base'>
+              {slide.textButton}
+            </a>
+          </div>
+          <div class='hidden md:block bg-blue-300 rounded-full max-w-[40%] min-w-[30%]'>
+            <img
+              class='w-auto max-h-[300px] lg:max-h-[400px] object-contain'
+              src={slide.img}
+              alt={slide.alt}
+            />
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  <!-- If we need pagination -->
+  <div class='swiper-pagination'></div>
+</div>
+<style>
+  .swiper-slide {
+    display: flex;
+  }
+</style>
+<script src='../../lib/swiper-home.js'></script>

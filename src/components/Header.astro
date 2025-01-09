@@ -1,0 +1,56 @@
+---
+const navLinks = [
+  { href: '/', text: 'Home' },
+  { href: '/', text: 'Acerca de' },
+  { href: '#services-home', text: 'Servicios' },
+  { href: '#products', text: 'Productos' },
+  { href: '', text: 'Contacto' },
+];
+---
+
+<header
+  class='bg-white min-h-[5vh] lg:min-h-[6vh] fixed w-full px-5 md:px-12 lg:px-16 py-2 flex shadow-lg z-50'
+>
+  <nav class='bg-white h-max w-full flex justify-between z-50'>
+    <div class='flex items-center'>
+      <a href='index.html'
+        ><img class='w-auto h-8 lg:h-10' src='/CMS-bg.webp' alt='' /></a
+      >
+    </div>
+    <div
+      id='menu-links'
+      class='bg-white flex lg:h-auto w-full lg:w-auto fixed left-0 top-[-100%] lg:static z-0 transition-all ease-linear delay-300'
+    >
+      <ul
+        class='flex flex-col lg:flex-row justify-between px-5 py-8 gap-y-8 lg:p-0 lg:items-center gap-x-12'
+      >
+        {
+          navLinks.map((link) => (
+            <li class='font-normal text-grayP hover:text-blue-500 transition-colors'>
+              <a href={link.href}>{link.text}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class='flex items-center lg:hidden'>
+      <i
+        id='menu-icon'
+        class='fa-solid fa-bars text-lg text-grayP transition-all delay-300'
+      ></i>
+    </div>
+  </nav>
+  <script>
+    const navMenu = document.getElementById('menu-links'),
+      menuIcon = document.getElementById('menu-icon');
+
+    menuIcon?.addEventListener('click', (e) => {
+      navMenu?.classList.toggle('top-[-100%]');
+      navMenu?.classList.toggle('top-[9%]');
+
+      menuIcon?.classList.toggle('fa-bars');
+      menuIcon?.classList.toggle('fa-close');
+    });
+  </script>
+  <!-- https://coolors.co/0057a0-4a90e2-f5f5f5-4a4a4a-1a1a1a -->
+</header>

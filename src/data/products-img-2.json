@@ -1,0 +1,50 @@
+[
+  {
+    "code": 1,
+    "text": "Plumas Bic",
+    "img": "/images/home-products/mother-tuf.webp",
+    "alt": "Plumas Bic"
+  },
+  {
+    "code": 1,
+    "text": "Plumas Paper",
+    "img": "/images/home-products/plumas-paper.webp",
+    "alt": "Plumas PaperMate"
+  },
+  {
+    "code": 1,
+    "text": "Goma",
+    "img": "/images/home-products/goma.webp",
+    "alt": "Goma"
+  },
+  {
+    "code": 1,
+    "text": "Lapices",
+    "img": "/images/home-products/lapices.webp",
+    "alt": "Lapices"
+  },
+  {
+    "code": 1,
+    "text": "Acuarela",
+    "img": "/images/home-products/acuarela.webp",
+    "alt": "Acuarela"
+  },
+  {
+    "code": 1,
+    "text": "Colores",
+    "img": "/images/home-products/colores-2.webp",
+    "alt": "Colores"
+  },
+  {
+    "code": 1,
+    "text": "Cable UTP",
+    "img": "/images/home-products/utp.webp",
+    "alt": "Cable UTP"
+  },
+  {
+    "code": 1,
+    "text": "M2",
+    "img": "/images/home-products/m2.webp",
+    "alt": "M2"
+  }
+]

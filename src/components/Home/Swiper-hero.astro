@@ -1,0 +1,44 @@
+---
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/pagination';
+
+const { heroData } = Astro.props;
+---
+
+<div class='swiper w-screen h-screen'>
+  <div class='swiper-wrapper'>
+    {
+      heroData.map((data: any) => (
+        <div class='swiper-slide px-6 md:px-12 lg:px-16 flex items-center justify-between'>
+          <div class='md:max-w-[50%] md:min-w-[40%]'>
+            <h2 class='text-blue-700 text-4xl lg:text-6xl font-bold'>
+              {data.textTitle}
+            </h2>
+            <h3 class='text-gray-700 text-base lg:text-lg py-6'>
+              {data.textDescription}
+            </h3>
+            <a href='' class='button-home text-sm md:text-base'>
+              {data.textButton}
+            </a>
+          </div>
+          <div class='hidden md:block bg-blue-300 rounded-full max-w-[40%] min-w-[30%]'>
+            <img
+              class='w-auto max-h-[300px] lg:max-h-[400px] object-contain'
+              src={data.img}
+              alt={data.alt}
+            />
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  <!-- If we need pagination -->
+  <div class='swiper-pagination'></div>
+</div>
+<style>
+  .swiper-slide {
+    display: flex;
+  }
+</style>
+<script src='../../lib/swiper-home.js'></script>

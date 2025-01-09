@@ -1,0 +1,53 @@
+---
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/pagination';
+
+const { products } = Astro.props;
+
+---
+
+<div
+  class='swiper-products w-full h-full flex items-center justify-center overflow-hidden'
+>
+  <div class='swiper-wrapper'>
+    {
+      products.map((product: any) => (
+        <div class='group swiper-slide flex items-center justify-center bg-whit'>
+          {(() => {
+            switch (product.code) {
+              case 1:
+                return (
+                  <img
+                    class='max-w-full max-h-full object-cover w-auto h-52'
+                    src={product.img}
+                    alt={product.alt}
+                  />
+                  <div class="opacity-0 group-hover:opacity-100 flex items-center justify-center text-4xl text-white font-semibold tracking-widest bg-blue-700/45 absolute top-0 left-0 w-full h-full transition-opacity duration-500">{product.alt}</div>
+                );
+              case 2:
+                return (
+                  <div class='swiper-slide-bg w-full h-full flex items-center justify-center text-blackP/80 text-5xl font-bold p-2'>
+                    {product.text}
+                  </div>
+                );
+
+              default:
+                return <p class='text-red-500'>Sin contenido disponible</p>;
+            }
+          })()}
+        </div>
+      ))
+    }
+  </div>
+
+  <!-- If we need pagination -->
+  <div class='swiper-pagination'></div>
+</div>
+<script src='../../lib/swiper-products.js'></script>
+
+<style>
+  .swiper-slide {
+    display: flex;
+  }
+</style>
