@@ -20,10 +20,28 @@ const socialLinks = [
   },
   { href: '/', icon: 'fa-brands fa-tiktok', text: 'Tik Tok' },
 ];
+
+const contact = [
+  {
+    icon: 'fa-brands fa-whatsapp',
+    text: '55 7047 3662',
+    href: 'https://wa.me/525570473662',
+  },
+  {
+    icon: 'fa-solid fa-phone',
+    text: '55 5778 9145',
+    href: 'tel:+525557789145',
+  },
+  {
+    icon: 'fa-solid fa-envelope',
+    text: 'compumundost@outlook.com',
+    href: 'mailto:compumundost@outlook.com',
+  },
+];
 ---
 
-<footer class='bg-blue-700 py-7 px-5 lg:px-9'>
-  <div class='flex flex-col md:flex-row justify-evenly items-center'>
+<footer class='bg-blue-700 container-section'>
+  <div class='flex flex-col md:flex-row justify-evenly items-baseline'>
     <div class='flex justify-center'>
       <ul>
         <p class='py-5 font-bold text-white text-xl'>Redes</p>
@@ -45,7 +63,7 @@ const socialLinks = [
         }
       </ul>
     </div>
-    <div class='flex justify-center'>
+    <div class='flex'>
       <ul>
         <p class='py-5 font-bold text-white text-xl'>Menu</p>
         {
@@ -63,8 +81,29 @@ const socialLinks = [
         }
       </ul>
     </div>
+    <div class='flex'>
+      <ul>
+        <p class='py-5 font-bold text-white text-xl'>Contacto</p>
+
+        {
+          contact.map((link) => (
+            <li class='py-2'>
+              <a
+                class='group font-light text-whiteP hover:text-gray-300 transition-colors ease-out'
+                href={link.href}
+              >
+                <i
+                  class={`pr-2 group-hover:translate-x-1 transition ease-linear ${link.icon}`}
+                />
+                {link.text}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </div>
-  <div class='flex justify-center pt-12'>
+  <div class='flex justify-center pt-24'>
     <span class='font-light text-xs text-whiteP'
       >© Alejandro Martínez | 2024</span
     >

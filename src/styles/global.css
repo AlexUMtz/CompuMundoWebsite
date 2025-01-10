@@ -7,7 +7,7 @@
 }
 
 body {
-  @apply font-poppins;
+  @apply font-poppins bg-slate-50;
 }
 
 @layer components {
@@ -20,7 +20,7 @@ body {
   }
 
   .title {
-    @apply text-[#343e52] text-4xl lg:text-5xl font-semibold md:font-medium;
+    @apply text-[#343e52] text-4xl lg:text-5xl font-semibold;
   }
 
   .text-p {
