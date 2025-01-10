@@ -2,7 +2,7 @@
   {
     "code": 1,
     "text": "Laptops",
-    "img": "/images/home-products/laptop-dell.webp",
+    "img": "/images/home-products/laptop-omen.webp",
     "alt": "Laptops"
   },
   {
@@ -14,13 +14,13 @@
   {
     "code": 1,
     "text": "Impresoras",
-    "img": "/images/home-products/impresora-brother.webp",
+    "img": "/images/home-products/impresora-hp-1.webp",
     "alt": "Impresoras"
   },
   {
     "code": 1,
     "text": "Toners",
-    "img": "/images/home-products/cartucho.webp",
+    "img": "/images/home-products/toner.webp",
     "alt": "Toners"
   },
   {
@@ -28,6 +28,12 @@
     "text": "Tintas",
     "img": "/images/home-products/tintas.webp",
     "alt": "Tintas"
+  },
+  {
+    "code": 1,
+    "text": "Motherboards",
+    "img": "/images/home-products/motherboard-msi.webp",
+    "alt": "Motherboards"
   },
   {
     "code": 1,
@@ -43,7 +49,7 @@
   },
   {
     "code": 1,
-    "text": "Router",
+    "text": "Routers",
     "img": "/images/home-products/router.webp",
     "alt": "Router"
   }

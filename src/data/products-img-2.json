@@ -1,21 +1,40 @@
 [
   {
     "code": 1,
-    "text": "Plumas Bic",
-    "img": "/images/home-products/mother-tuf.webp",
-    "alt": "Plumas Bic"
+    "text": "USB",
+    "img": "/images/home-products/usb.webp",
+    "alt": "USB"
   },
   {
     "code": 1,
-    "text": "Plumas Paper",
+    "text": "Discos Duros",
+    "img": "/images/home-products/hdd.webp",
+    "alt": "Discos Duros"
+  },
+  {
+    "code": 1,
+    "text": "Mouse y Teclado",
+    "img": "/images/home-products/mouse.webp",
+    "alt": "Mouse"
+  },
+
+  {
+    "code": 1,
+    "text": "Accesorios",
+    "img": "/images/home-products/adaptador-c.webp",
+    "alt": "Adaptador-C"
+  },
+  {
+    "code": 1,
+    "text": "Plumas",
     "img": "/images/home-products/plumas-paper.webp",
     "alt": "Plumas PaperMate"
   },
   {
     "code": 1,
-    "text": "Goma",
-    "img": "/images/home-products/goma.webp",
-    "alt": "Goma"
+    "text": "Plumones",
+    "img": "/images/home-products/plumones.webp",
+    "alt": "Plumones"
   },
   {
     "code": 1,
@@ -25,26 +44,8 @@
   },
   {
     "code": 1,
-    "text": "Acuarela",
-    "img": "/images/home-products/acuarela.webp",
-    "alt": "Acuarela"
-  },
-  {
-    "code": 1,
     "text": "Colores",
-    "img": "/images/home-products/colores-2.webp",
+    "img": "/images/home-products/colores.webp",
     "alt": "Colores"
-  },
-  {
-    "code": 1,
-    "text": "Cable UTP",
-    "img": "/images/home-products/utp.webp",
-    "alt": "Cable UTP"
-  },
-  {
-    "code": 1,
-    "text": "M2",
-    "img": "/images/home-products/m2.webp",
-    "alt": "M2"
   }
 ]

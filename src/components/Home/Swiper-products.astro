@@ -13,17 +13,17 @@ const { products } = Astro.props;
   <div class='swiper-wrapper'>
     {
       products.map((product: any) => (
-        <div class='group swiper-slide flex items-center justify-center bg-whit'>
+        <div class='bg-gradient-to-r from-[#0051ff] to-[#4ce3f7] group swiper-slide flex items-center justify-center'>
           {(() => {
             switch (product.code) {
               case 1:
                 return (
                   <img
-                    class='max-w-full max-h-full object-cover w-auto h-52'
+                    class='bg max-w-full max-h-full object-cover w-auto h-52'
                     src={product.img}
                     alt={product.alt}
                   />
-                  <div class="opacity-0 group-hover:opacity-100 flex items-center justify-center text-4xl text-white font-semibold tracking-widest bg-blue-700/45 absolute top-0 left-0 w-full h-full transition-opacity duration-500">{product.alt}</div>
+                  <div class="opacity-0 group-hover:opacity-100 flex items-center justify-center text-4xl text-white font-semibold tracking-wide bg-blue-950/50 absolute top-0 left-0 w-full h-full transition-opacity duration-500">{product.text}</div>
                 );
               case 2:
                 return (
