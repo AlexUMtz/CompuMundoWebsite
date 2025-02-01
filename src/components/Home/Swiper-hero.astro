@@ -10,7 +10,7 @@ const { heroData } = Astro.props;
   <div class='swiper-wrapper'>
     {
       heroData.map((data: any) => (
-        <div class='swiper-slide border-2 border-gray-600 px-6 md:px-12 lg:px-16 flex items-center '>
+        <div class='swiper-slide px-6 md:px-12 lg:px-16 flex items-center '>
           <div class='md:max-w-[50%] md:min-w-[40%]'>
             <h2 class='text-blue-700 text-4xl lg:text-6xl font-bold'>
               {data.textTitle}

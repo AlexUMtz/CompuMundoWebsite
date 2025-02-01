@@ -1,0 +1,24 @@
+<section class='w-screen h-[55vh] border-2'>
+  <div
+    class='parallax-container bg-blue-700 bg-cover bg-center bg-fixed w-full h-[55vh] flex items-center justify-center text-center'
+  >
+    <h1 class='text-4xl md:text-6xl text-white font-bold z-10'>
+      Acerca de nosotros
+    </h1>
+  </div>
+</section>
+<style>
+  .parallax-container {
+    background-image: url('/images/about/hero-about.webp');
+  }
+
+  .parallax-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55vh;
+    background-color: rgb(29, 78, 216, 0.3);
+  }
+</style>
