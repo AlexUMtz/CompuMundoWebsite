@@ -18,7 +18,7 @@ const { heroData } = Astro.props;
             <h3 class='text-gray-700 text-base lg:text-lg py-6'>
               {data.textDescription}
             </h3>
-            <a href='' class='button-home text-sm md:text-base'>
+            <a href={data.href} class='button-home text-sm md:text-base'>
               {data.textButton}
             </a>
           </div>

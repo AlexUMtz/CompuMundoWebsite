@@ -1,0 +1,18 @@
+---
+import ContactData from '@components/Contact/Data-contact.astro';
+import ContactForm from '@components/ContactForm.astro';
+---
+
+<section id='contact' class='container-section md:pt-64 lg:pt-32'>
+  <div class='title-container md:py-6'>
+    <h2 class='text-titleBlue text-xl md:text-3xl font-semibold'>
+      ¿Tienes alguna pregunta o necesitas más información sobre nuestros
+      productos y servicios? <b class='text-blue-700'>¡Contáctanos!</b> Estaremos
+      encantados de ayudarte.
+    </h2>
+  </div>
+  <div class='flex justify-between flex-col md:flex-row gap-3'>
+    <ContactData />
+    <ContactForm />
+  </div>
+</section>

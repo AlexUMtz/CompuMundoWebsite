@@ -1,0 +1,63 @@
+---
+const contactData = [
+  {
+    typeData: 'WhatsApp:',
+    textData: '55 7047 3662',
+    hrefData: 'https://wa.me/525570473662',
+    iconClass: 'fa-brands fa-whatsapp',
+  },
+  {
+    typeData: 'Teléfono:',
+
+    textData: '55 5778 9145',
+    hrefData: 'tel:+525557789145',
+    iconClass: 'fa-solid fa-phone',
+  },
+  {
+    typeData: 'Correo:',
+    textData: 'compumundost@outlook.com',
+    hrefData: 'mailto:compumundost@outlook.com',
+    iconClass: 'fa-solid fa-envelope',
+  },
+];
+---
+
+<div class='flex flex-col justify-center gap-y-3 w-full md:w-1/2'>
+  {
+    contactData.map((data) => (
+      <div class='bg-white flex flex-wrap items-center justify-start shadow-md p-4 gap-x-2 rounded-lg px-12 md:px-28 md:text-lg'>
+        <a href={data.hrefData}>
+          <i
+            class={`${data.iconClass} text-white bg-gradient-to-r from-[#0400ff] to-[#4ce3f7] text-xl  flex items-center justify-center rounded-full w-9 h-9 md:w-12 md:h-12`}
+          />
+          {/* bg-gradient-to-r from-[#0400ff] to-[#4ce3f7] */}
+        </a>
+        <b class='text-[#343e52]'>{data.typeData}</b>
+        <a href={data.hrefData} class='text-[#343e52] text-sm md:text-base'>
+          {data.textData}
+        </a>
+      </div>
+    ))
+  }
+
+  <div
+    class='bg-white flex flex-col gap-x-2 justify-center shadow-md p-4 gap-y-5 rounded-lg px-12 md:px-28'
+  >
+    <div class='flex flex-row items-center gap-2'>
+      <i
+        class='fa-solid fa-clock text-white text-xl bg-gradient-to-r from-[#0400ff] to-[#4ce3f7] flex items-center justify-center rounded-full w-9 h-9 md:w-12 md:h-12'
+      ></i>
+
+      <b class='text-[#343e52] md:text-lg'>Horario:</b>
+    </div>
+
+    <ul class='block md:text-lg'>
+      <li class='text-[#343e52]'>
+        <b>- Lunes - Viernes: </b>11:00am - 9:00pm
+      </li>
+      <li class='text-[#343e52]'>
+        <b>- Sabado:</b> 7:00am - 3:00pm
+      </li>
+    </ul>
+  </div>
+</div>

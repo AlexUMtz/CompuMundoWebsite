@@ -7,8 +7,42 @@ import '@styles/global.css';
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='generator' content={Astro.generator} />
+    <link rel='icon' type='image/x-icon' href='/compumundo-ico.ico' />
+    <link rel='apple-touch-icon' href='/compumundo-logo.webp' />
+
+    <meta
+      name='description'
+      content='CompuMundo Support: Venta y reparación de computadoras, laptops, impresoras y consumibles. Instalación de software y más. ¡Contáctanos!'
+    />
+    <meta
+      name='keywords'
+      content='computadoras, laptops, reparación, impresoras, software, papelería, CompuMundo'
+    />
+
+    <!-- OEPN GRAPH -->
+    <meta
+      property='og:title'
+      content='CompuMundo Support - Expertos en Tecnología'
+    />
+    <meta
+      property='og:description'
+      content='Venta y reparación de computadoras, impresoras y más. ¡Calidad y servicio garantizado!'
+    />
+    <!-- <meta property='og:image' content='https://tu-dominio.com/imagen.jpg' />
+    <meta property='og:url' content='https://tu-dominio.com' />
+    <meta property='og:type' content='website' /> -->
+
+    <!-- TWITTER -->
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta
+      name='twitter:title'
+      content='CompuMundo Support - Expertos en Tecnología'
+    />
+    <meta
+      name='twitter:description'
+      content='Venta y reparación de computadoras, impresoras y más. ¡Calidad y servicio garantizado!'
+    />
+    <!-- <meta name='twitter:image' content='https://tu-dominio.com/imagen.jpg' /> -->
 
     <!-- FONT -->
     <link rel='preconnect' href='https://fonts.googleapis.com' />
@@ -40,6 +74,11 @@ import '@styles/global.css';
       })();
     </script>
 
+    <link rel='preload' href='/images/services/hero-services.webp' as='image' />
+    <link rel='preload' href='/images/products/hero-products.webp' as='image' />
+    <link rel='preload' href='/images/contact/hero-contact.webp' as='image' />
+    <link rel='preload' href='/images/about/hero-about.webp' as='image' />
+
     <title>Compu Mundo Support</title>
   </head>
   <body class='md:overflow-x-hidden'>
@@ -57,5 +96,10 @@ import '@styles/global.css';
     font-family: 'Poppins', sans-serif;
 
     overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
   }
 </style>

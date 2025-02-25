@@ -1,0 +1,49 @@
+---
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/pagination';
+
+const brands = [
+  { img: '/images/products/amd.webp', alt: 'AMD-logo' },
+  { img: '/images/products/intel-logo.webp', alt: 'Intel-logo' },
+  { img: '/images/products/kingston-logo.webp', alt: 'Kingston-logo' },
+  { img: '/images/products/gigabyte-logo.webp', alt: 'Gigabyte-logo' },
+  { img: '/images/products/rog.webp', alt: 'rog-logo' },
+  { img: '/images/products/asus.webp', alt: 'Asus-logo' },
+  { img: '/images/products/dell.webp', alt: 'DELL-logo' },
+  { img: '/images/products/hp.webp', alt: 'HP-logo' },
+  { img: '/images/products/samsung.webp', alt: 'Samsung-logo' },
+  { img: '/images/products/tplink.webp', alt: 'tp-link-logo' },
+];
+---
+
+<section class='py-10'>
+  <div class='text-center'>
+    <h3 class='text-gray-500 text-lg'>Trabajamos con las mejores marcas</h3>
+  </div>
+  <div class='swiper-brands'>
+    <div class='swiper-wrapper'>
+      {
+        brands.map((brand) => (
+          <div class='swiper-slide relative'>
+            <img src={brand.img} alt={brand.alt} class='h-auto w-24' />
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- If we need pagination -->
+    <div class='swiper-pagination'></div>
+  </div>
+</section>
+<script src='../../lib/swiper-brands.js'></script>
+
+<style>
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    filter: grayscale(100%) brightness(120%);
+  }
+</style>

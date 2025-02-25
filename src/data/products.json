@@ -1,0 +1,209 @@
+[
+  {
+    "productName": "Laptops",
+    "img": "/images/products/laptop-omen.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "PC de escritorio",
+    "img": "/images/products/dell-optiplex.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "PC Gamer",
+    "img": "/images/products/pc-gamer-1.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "Procesadores",
+    "img": "/images/products/procesador.webp",
+    "category": "computer"
+  },
+
+  {
+    "productName": "Motherboards",
+    "img": "/images/products/motherboard-msi.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "Discos duros",
+    "img": "/images/products/hdd.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "SSD",
+    "img": "/images/products/ssd.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "RAM PC",
+    "img": "/images/products/ram.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "RAM Laptop",
+    "img": "/images/products/ramlap.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "M2",
+    "img": "/images/products/m2.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "Monitor",
+    "img": "/images/products/monitor.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "Sistemas de enfriamiento",
+    "img": "/images/products/enfriamiento.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "Fuentes de poder",
+    "img": "/images/products/fuente.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "Tarjetas de video",
+    "img": "/images/products/grafica.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "Ventiladores",
+    "img": "/images/products/ventilador.webp",
+    "category": "computer"
+  },
+  {
+    "productName": "Impresoras",
+    "img": "/images/products/impresora-hp-1.webp",
+    "category": "printer"
+  },
+  {
+    "productName": "Multifuncionales",
+    "img": "/images/products/brother.webp",
+    "category": "printer"
+  },
+  {
+    "productName": "Tintas",
+    "img": "/images/products/tintas.webp",
+    "category": "printer"
+  },
+  {
+    "productName": "Toners",
+    "img": "/images/products/toner.webp",
+    "category": "printer"
+  },
+  {
+    "productName": "USB",
+    "img": "/images/products/usb.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Routers",
+    "img": "/images/products/router.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Switch",
+    "img": "/images/products/switch.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Cable UTP",
+    "img": "/images/products/utp.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Teclado",
+    "img": "/images/products/teclado.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Mouse",
+    "img": "/images/products/mouse.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Cargadores para Laptop",
+    "img": "/images/products/cargador-laptop.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Adaptadores",
+    "img": "/images/products/adaptador-c.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "USB",
+    "img": "/images/products/usb.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Audífonos",
+    "img": "/images/products/audifonos.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Cable Tipo C",
+    "img": "/images/products/cable-c.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Cable de corriente",
+    "img": "/images/products/cable-corriente.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Cargadores",
+    "img": "/images/products/cargador.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Case para Disco Duro",
+    "img": "/images/products/case.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Cable DisplayPort",
+    "img": "/images/products/dp.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Disco Duro Externo",
+    "img": "/images/products/hddexterno.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Cable HDMI",
+    "img": "/images/products/hdmi.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Lectores externos",
+    "img": "/images/products/lector.webp",
+    "category": "accesories"
+  },
+
+  {
+    "productName": "Cable V8",
+    "img": "/images/products/v8.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Cable VGA",
+    "img": "/images/products/vga.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "Antena Wifi",
+    "img": "/images/products/wifi.webp",
+    "category": "accesories"
+  },
+  {
+    "productName": "MicroSD",
+    "img": "/images/products/microsd.webp",
+    "category": "accesories"
+  }
+]
