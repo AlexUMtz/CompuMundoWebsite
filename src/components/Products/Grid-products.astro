@@ -1,32 +1,26 @@
+---
+const categories = [
+  { id: 'allproducts', nombre: 'Todos' },
+  { id: 'computer', nombre: 'Computadoras' },
+  { id: 'printer', nombre: 'Impresoras' },
+  { id: 'accesories', nombre: 'Accesorios' },
+];
+---
+
 <section class='min-h-[80vh] container-section pt-0'>
   <div
     class='categories-container flex flex-row justify-center gap-2 flex-wrap'
   >
-    <button
-      id='allproducts'
-      class='bg-white text-gray-500 shadow-md px-5 py-1 border-solid border-2 border-gray-200 rounded-md hover:bg-gray-200 transition-colors'
-      >Todos</button
-    >
-    <button
-      id='computer'
-      class='bg-white text-gray-500 shadow-md px-5 py-1 border-solid border-2 border-gray-200 rounded-md hover:bg-gray-200 transition-colors'
-      >Computadoras</button
-    >
-    <button
-      id='printer'
-      class='bg-white text-gray-500 shadow-md px-5 py-1 border-solid border-2 border-gray-200 rounded-md hover:bg-gray-200 transition-colors'
-      >Impresoras</button
-    >
-    <button
-      id='accesories'
-      class='bg-white text-gray-500 shadow-md px-5 py-1 border-solid border-2 border-gray-200 rounded-md hover:bg-gray-200 transition-colors'
-      >Accesorios</button
-    >
-    <!-- <button
-      id='papers'
-      class='bg-white text-gray-500 shadow-md px-5 py-1 border-solid border-2 border-gray-200 rounded-md hover:bg-gray-200 transition-colors'
-      >Papeleria</button
-    > -->
+    {
+      categories.map((category) => (
+        <button
+          id={category.id}
+          class='bg-white text-gray-500 shadow-md px-5 py-1 border-solid border-2 border-gray-200 rounded-md hover:bg-gray-200 transition-colors'
+        >
+          {category.nombre}
+        </button>
+      ))
+    }
   </div>
 
   <div class='card-products-container py-8'>
@@ -37,4 +31,59 @@
     </div>
   </div>
 </section>
-<script src='../../lib/categories-filter.js'></script>
+<script>
+  import productsData from '../../data/products.json';
+
+  const displayProducts = (productsToShow: any) => {
+    const shopContent = document.getElementById('shopContent');
+
+    if (shopContent) {
+      shopContent.innerHTML = '';
+    }
+
+    productsToShow.forEach((product: any) => {
+      const card = document.createElement('div');
+      card.className =
+        ' bg-white text-gray-500  p-4 shadow-md rounded-lg flex flex-col justify-center items-center';
+      card.innerHTML = `
+      <h3 class="md:text-lg">${product.productName}</h3>
+      <img class='h-auto w-36 m-auto' src="${product.img}" alt="${product.productName}">
+      `;
+
+      //
+
+      shopContent?.appendChild(card);
+    });
+  };
+
+  const filterProducts = (category: any) => {
+    const producstToShow = productsData.filter(
+      (product) => product.category === category
+    );
+
+    displayProducts(producstToShow);
+  };
+
+  const allBtn = document.getElementById('allproducts');
+  const computerBtn = document.getElementById('computer');
+  const printerBtn = document.getElementById('printer');
+  const accesoriesBtn = document.getElementById('accesories');
+
+  allBtn?.addEventListener('click', () => {
+    displayProducts(productsData);
+  });
+
+  computerBtn?.addEventListener('click', () => {
+    filterProducts('computer');
+  });
+
+  printerBtn?.addEventListener('click', () => {
+    filterProducts('printer');
+  });
+
+  accesoriesBtn?.addEventListener('click', () => {
+    filterProducts('accesories');
+  });
+
+  displayProducts(productsData);
+</script>
