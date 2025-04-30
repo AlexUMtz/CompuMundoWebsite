@@ -8,6 +8,4 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind(), relativeLinks()],
   output: 'static',
-  site: 'https://alexumtz.github.io',
-  // base: 'CompuMundoWebsite',
 });
