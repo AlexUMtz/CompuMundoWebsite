@@ -23,29 +23,5 @@
     "text": "Accesorios",
     "img": "/images/home-products/adaptador-c.webp",
     "alt": "Adaptador-C"
-  },
-  {
-    "code": 1,
-    "text": "Plumas",
-    "img": "/images/home-products/plumas-paper.webp",
-    "alt": "Plumas PaperMate"
-  },
-  {
-    "code": 1,
-    "text": "Plumones",
-    "img": "/images/home-products/plumones.webp",
-    "alt": "Plumones"
-  },
-  {
-    "code": 1,
-    "text": "Lapices",
-    "img": "/images/home-products/lapices.webp",
-    "alt": "Lapices"
-  },
-  {
-    "code": 1,
-    "text": "Colores",
-    "img": "/images/home-products/colores.webp",
-    "alt": "Colores"
   }
 ]
